@@ -43,12 +43,12 @@ p {
 }
 
 .list-inline {
-  padding-left: 0px;
+  padding-left: 0;
 }
-
 
 .no-decoration {
   text-decoration: none;
+  list-style: none;
 }
 
 .container {
@@ -88,6 +88,26 @@ p {
   display: inline-block;
 }
 
+#sidebar {
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: left .3s;
+  background-color: #747C92;
+}
+
+.iconos {
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.text-list {
+    text-align: left;
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 960px) {
@@ -98,6 +118,9 @@ p {
 @media (max-width: 720px) {
   .container {
     width: 500px;
+  }
+  #sidebar{
+    left: -200px;
   }
 }
 @media (max-width: 540px) {
